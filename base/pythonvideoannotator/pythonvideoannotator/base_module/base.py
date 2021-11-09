@@ -60,8 +60,8 @@ class Base(BaseWidget):
         self._player.process_frame_event = self.process_frame_event
         self._player.click_event = self.on_player_click_event
         self._player.double_click_event = self.on_player_double_click_event
-        self._player.drag_event = self.on_player_drag_event
-        self._player.end_drag_event = self.on_player_end_drag_event
+        #self._player.drag_event = self.on_player_drag_event
+        #self._player.end_drag_event = self.on_player_end_drag_event
 
         # ignore these controls key release event
         self._time.key_release_event = lambda x: x
@@ -139,11 +139,13 @@ class Base(BaseWidget):
     def on_player_drag_event(self, p1, p2):
         if self._project:
             self._project.player_on_drag(p1, p2)
+
         self._player.refresh()
 
     def on_player_end_drag_event(self, p1, p2):
         if self._project:
             self._project.player_on_end_drag(p1, p2)
+
         self._player.refresh()
 
     def on_player_click_event(self, event, x, y):
