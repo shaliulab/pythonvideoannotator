@@ -22,6 +22,7 @@ USERSTATS_URL = "https://stats.cf-sw.org"
 
 #VIDEOANNOTATOR_PROJECTPATH = '/home/ricardo/bitbucket/idtracker-project/session_session0'
 #VIDEOANNOTATOR_PROJECTPATH = '/home/ricardo/Downloads/to-delete'
+CONTROL_PLAYER = "ControlPlayer"
 
 SAVED_GRAPH_FILE_PATH 	= ""
 SAVED_BONSAI_FILE_PATH 	= ""

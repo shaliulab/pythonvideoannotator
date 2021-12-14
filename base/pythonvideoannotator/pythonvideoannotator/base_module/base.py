@@ -23,6 +23,7 @@ from pythonvideoannotator_models.models.video.objects.object2d import Object2D
 
 from ..userstats import track_user_stats
 
+from pythonvideoannotator_utils import MultiControlPlayer
 
 if conf.PYFORMS_MODE == 'GUI':
     from AnyQt.QtWidgets import QApplication
@@ -31,7 +32,14 @@ if conf.PYFORMS_MODE == 'GUI':
 def Exit(): exit()
 
 
+if getattr(conf, "CONTROL_PLAYER", "ControlPlayer") == "ControlPlayer":
+    PlayerClass = ControlPlayer
+elif conf.CONTROL_PLAYER == "MultiControlPlayer":
+    PlayerClass MultiControlPlayer
+
 class Base(BaseWidget):
+    _PlayerClass = PlayerClass
+
     """Application form"""
 
     def __init__(self):
@@ -43,7 +51,7 @@ class Base(BaseWidget):
         self._project = Project(parent=self)
         Dialog.project = self._project
 
-        self._player = ControlPlayer("Player")
+        self._player = self._PlayerClass"Player")
         self._time = ControlEventTimeline('Time')
         self._dock = ControlDockWidget("Timeline", side='bottom', order=1, margin=5)
         self._progress = ControlProgress('Progress', visible=False)
@@ -269,3 +277,5 @@ class Base(BaseWidget):
     @property
     def project(self):
         return self._project
+
+
