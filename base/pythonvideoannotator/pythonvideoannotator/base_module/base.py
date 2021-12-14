@@ -35,7 +35,7 @@ def Exit(): exit()
 if getattr(conf, "CONTROL_PLAYER", "ControlPlayer") == "ControlPlayer":
     PlayerClass = ControlPlayer
 elif conf.CONTROL_PLAYER == "MultiControlPlayer":
-    PlayerClass MultiControlPlayer
+    PlayerClass = MultiControlPlayer
 
 class Base(BaseWidget):
     _PlayerClass = PlayerClass
