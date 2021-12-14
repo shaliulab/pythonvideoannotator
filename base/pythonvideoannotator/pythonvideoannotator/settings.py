@@ -105,3 +105,5 @@ SHORT_KEYS = {
 
 from AnyQt.QtWidgets import QColorDialog, QFileDialog
 PYFORMS_COLORDIALOGS_OPTIONS = QColorDialog.ShowAlphaChannel
+
+VIDEO_CAPTURE = "cv2"

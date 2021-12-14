@@ -1,11 +1,16 @@
 # !/usr/bin/python2
 # -*- coding: utf-8 -*-
 
-from confapp import conf
+try:
+	from confapp import conf
+except ImportError as err:
+	logger.critical(str(err), exc_info=True)
+	exit("Could not load confapp! Is it installed?")
+
 import logging, traceback, pythonvideoannotator, sys, platform
 
 from urllib.parse import urlencode
-from uuid 		  import getnode as get_mac
+from uuid import getnode as get_mac
 from AnyQt.QtWidgets import QMessageBox
 from urllib.request  import Request, urlopen
 from AnyQt.QtWidgets import QApplication
@@ -13,16 +18,25 @@ from AnyQt.QtWidgets import QApplication
 logger = logging.getLogger(__name__)
 
 try:
+	import local_settings
+	conf += local_settings
+	import re
+	index = [re.match("local_settings", module.__name__) is not None for module in conf._modules].index(True)
+	module = conf._modules.pop(index)
+	conf._modules = [module] + conf._modules
+	logger.warning("Imported local settings!")
+
+except ImportError:
+	logger.info("No local_settings found")
+
+
+try:
 	import pyforms
 except ImportError as err:
 	logger.critical(str(err), exc_info=True)
 	exit("Could not load pyforms! Is it installed?")
 
-try:
-	from confapp import conf
-except ImportError as err:
-	logger.critical(str(err), exc_info=True)
-	exit("Could not load confapp! Is it installed?")
+
 
 
 from pythonvideoannotator.base_module import BaseModule
@@ -53,6 +67,8 @@ def start(parent_win=None):
 	except Exception as e:
 		logger.error(e, exc_info=True)
 		report = traceback.format_exc()
+		print(e)
+		print(report)
 
 		app = QApplication(sys.argv)
 		m = QMessageBox(

@@ -1,5 +1,6 @@
 #! /usr/bin/python2
 # -*- coding: utf-8 -*-
+import logging
 
 import pypi_xmlrpc
 import sys, subprocess
@@ -32,13 +33,7 @@ if conf.PYFORMS_MODE == 'GUI':
 def Exit(): exit()
 
 
-if getattr(conf, "CONTROL_PLAYER", "ControlPlayer") == "ControlPlayer":
-    PlayerClass = ControlPlayer
-elif conf.CONTROL_PLAYER == "MultiControlPlayer":
-    PlayerClass = MultiControlPlayer
-
 class Base(BaseWidget):
-    _PlayerClass = PlayerClass
 
     """Application form"""
 
@@ -51,7 +46,7 @@ class Base(BaseWidget):
         self._project = Project(parent=self)
         Dialog.project = self._project
 
-        self._player = self._PlayerClass"Player")
+        self._player = ControlPlayer("Player")
         self._time = ControlEventTimeline('Time')
         self._dock = ControlDockWidget("Timeline", side='bottom', order=1, margin=5)
         self._progress = ControlProgress('Progress', visible=False)
@@ -269,6 +264,8 @@ class Base(BaseWidget):
 
     @video.setter
     def video(self, value):
+        import ipdb; ipdb.set_trace()
+
         self._player.value = value
         self._player.enabled = value is not None
         if value:
