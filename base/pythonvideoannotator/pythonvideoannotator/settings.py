@@ -107,3 +107,4 @@ from AnyQt.QtWidgets import QColorDialog, QFileDialog
 PYFORMS_COLORDIALOGS_OPTIONS = QColorDialog.ShowAlphaChannel
 
 VIDEO_CAPTURE = "cv2"
+RECONNECT_BLOBS_FROM_CACHE=False

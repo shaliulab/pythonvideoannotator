@@ -47,6 +47,7 @@ class Base(BaseWidget):
         Dialog.project = self._project
 
         self._player = ControlPlayer("Player")
+        print(self._player)
         self._time = ControlEventTimeline('Time')
         self._dock = ControlDockWidget("Timeline", side='bottom', order=1, margin=5)
         self._progress = ControlProgress('Progress', visible=False)
@@ -264,8 +265,6 @@ class Base(BaseWidget):
 
     @video.setter
     def video(self, value):
-        import ipdb; ipdb.set_trace()
-
         self._player.value = value
         self._player.enabled = value is not None
         if value:
