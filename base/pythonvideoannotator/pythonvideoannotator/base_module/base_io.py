@@ -1,11 +1,12 @@
 import traceback
+import logging
 from .base import Base
 from confapp import conf
 
 if conf.PYFORMS_MODE == 'GUI':
     from AnyQt.QtWidgets import QFileDialog, QMessageBox
 
-
+logger = logging.getLogger(__name__)
 
 class BaseIO(Base):
 
@@ -22,6 +23,8 @@ class BaseIO(Base):
             self._project.load(data, project_path)
         except Exception as e:
             QMessageBox.critical(self, "Error", str(e))
+            logger.error(e)
+            logger.error(traceback.print_exc())
 
     def save_project(self, project_path=None):
         try:
