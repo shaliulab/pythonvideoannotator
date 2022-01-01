@@ -104,3 +104,5 @@ SHORT_KEYS = {
 
 from AnyQt.QtWidgets import QColorDialog, QFileDialog
 PYFORMS_COLORDIALOGS_OPTIONS = QColorDialog.ShowAlphaChannel
+
+RECONNECT_BLOBS_FROM_CACHE=False
