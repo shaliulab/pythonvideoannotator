@@ -129,6 +129,12 @@ class BaseKeysEvents(BaseIO):
         #### PLAYER SHORTCUTS ################################################################
         ######################################################################################
 
+        # Toggle player.
+        elif key == conf.SHORT_KEYS['Enable / disable secondary feeds']:
+            logger.debug('Enable / disable secondary feeds')
+            self.player.toggle_video()
+
+
         # Play or pause the video.
         elif key == conf.SHORT_KEYS['Play or pause the video.']:
             logger.debug('Play or pause the video')
@@ -144,15 +150,25 @@ class BaseKeysEvents(BaseIO):
             logger.debug('Jumps 1 frame forward.')
             self.player.forward_one_frame()
 
-        # Jumps 1 frame backwards.
+        # Jumps 1 second backwards.
         elif key == conf.SHORT_KEYS['Jumps 1 second backward.']:
             logger.debug('Jumps 1 second backward.')
             self.player.back_one_second()
 
-        # Jumps 1 frame forward.
+        # Jumps 1 second forward.
         elif key == conf.SHORT_KEYS['Jumps 1 second forward.']:
             logger.debug('Jumps 1 second forward.')
             self.player.forward_one_second()
+
+        # Jumps 5 seconds backwards.
+        elif key == conf.SHORT_KEYS['Jumps 5 second backward.']:
+            logger.debug('Jumps 5 second backward.')
+            self.player.back_five_second()
+
+        # Jumps 5 seconds forward.
+        elif key == conf.SHORT_KEYS['Jumps 5 second forward.']:
+            logger.debug('Jumps 5 second forward.')
+            self.player.forward_five_second()
 
         # Jumps 20 seconds backward.
         elif key == conf.SHORT_KEYS['Jumps 20 seconds backward.']:

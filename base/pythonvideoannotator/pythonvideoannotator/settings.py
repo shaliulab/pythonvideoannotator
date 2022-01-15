@@ -81,11 +81,14 @@ SHORT_KEYS = {
     'Select the previous event.':                           'Alt+A',
 
     # PLAYER
+    'Enable / disable secondary feeds':                     'Ctrl+/',
     'Play or pause the video.':                             'Ctrl+P',
     'Jumps 1 frame backward.':                              'Ctrl+I',
     'Jumps 1 frame forward.':                               'Ctrl+O',
     'Jumps 1 second backward.':                             'Ctrl+T',
     'Jumps 1 second forward.':                              'Ctrl+Y',
+    'Jumps 5 second backward.':                             'Ctrl+Shift+T',
+    'Jumps 5 second forward.':                              'Ctrl+Shift+Y',
     'Jumps 20 seconds backward.':                           'Ctrl+K',
     'Jumps 20 seconds forward.':                            'Ctrl+L',
     'Set player speed to 1x.':                              'Ctrl+1',
