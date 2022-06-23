@@ -45,7 +45,7 @@ REQUIREMENTS = [
 # REQUIREMENTS END
 
 setup(
-    name='Python video annotator',
+    name='Python video annotator-shaliulab',
     version=version,
     description="""""",
     author=['Ricardo Ribeiro'],
