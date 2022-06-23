@@ -20,7 +20,7 @@ with open(os.path.join(PACKAGE_PATH, '..','..','README.md'), 'r') as fd:
 REQUIREMENTS = [
     "geometry_designer==0.4.38",
 	"modular-computer-vision-api-gui==0.3.31",
-	"pyforms-gui==4.904.152",
+	"pyforms-gui-shaliulab==4.904.153",
 	"modular-computer-vision-api==0.3.29",
 	"python-video-annotator-models-gui==0.7.63",
 	"python-video-annotator-models==0.8.82",
