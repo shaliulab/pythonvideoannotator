@@ -24,6 +24,7 @@ REQUIREMENTS = [
 	"modular-computer-vision-api==0.3.29",
 	"python-video-annotator-models-gui==0.7.63",
 	"python-video-annotator-models-shaliulab==0.8.83",
+	"python-video-annotator-module-idtrackerai-shaliulab==1.0.2",
 	"python-video-annotator-module-timeline==0.6.26",
 	"python-video-annotator-module-eventstats==0.5.15",
 	"python-video-annotator-module-virtual-object-generator==0.6.26",
