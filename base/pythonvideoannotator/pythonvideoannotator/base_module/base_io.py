@@ -21,6 +21,8 @@ class BaseIO(Base):
         try:
             self._project.load(data, project_path)
         except Exception as e:
+            print(e)
+            print(traceback.print_exc())
             QMessageBox.critical(self, "Error", str(e))
 
     def save_project(self, project_path=None):
