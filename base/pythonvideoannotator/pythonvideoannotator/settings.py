@@ -95,6 +95,16 @@ SHORT_KEYS = {
     'Set player speed to 7x.':                              'Ctrl+7',
     'Set player speed to 8x.':                              'Ctrl+8',
     'Set player speed to 9x.':                              'Ctrl+9',
+    'Set player speed to 10x.':                              'Alt+1',
+    'Set player speed to 20x.':                              'Alt+2',
+    'Set player speed to 30x.':                              'Alt+3',
+    'Set player speed to 40x.':                              'Alt+4',
+    'Set player speed to 50x.':                              'Alt+5',
+    'Set player speed to 60x.':                              'Alt+6',
+    'Set player speed to 70x.':                              'Alt+7',
+    'Set player speed to 80x.':                              'Alt+8',
+    'Set player speed to 90x.':                              'Alt+9',
+    
 
     # SPECIAL KEYS
     #'Go to the next event and then click the mark the point button.':           'Ctrl+I',

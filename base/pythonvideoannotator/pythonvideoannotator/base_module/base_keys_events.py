@@ -1,5 +1,5 @@
 import logging
-
+import warnings
 from AnyQt.QtGui import QKeySequence
 from AnyQt.QtCore import Qt
 from pythonvideoannotator_models_gui.models.video.objects.object2d.datasets.path import Path
@@ -40,6 +40,7 @@ class BaseKeysEvents(BaseIO):
 
         key = QKeySequence( event.modifiers() | event.key()).toString().encode("ascii", "ignore").decode()
         logger.debug(key)
+        print(key)
 
         ######################################################################################
         #### TIMELINE SHORTCUTS ##############################################################
@@ -189,3 +190,41 @@ class BaseKeysEvents(BaseIO):
         # Set player speed to 9x
         elif key == conf.SHORT_KEYS['Set player speed to 9x.']:
             self.player.set_speed_9x()
+
+        # Set player speed to 10x
+        elif key == conf.SHORT_KEYS['Set player speed to 10x.']:
+            self.player.set_speed_10x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 20x.']:
+            self.player.set_speed_20x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 30x.']:
+            self.player.set_speed_30x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 40x.']:
+            self.player.set_speed_40x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 50x.']:
+            self.player.set_speed_50x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 60x.']:
+            self.player.set_speed_60x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 70x.']:
+            self.player.set_speed_70x()
+
+        # Set player speed to 9x
+        elif key == conf.SHORT_KEYS['Set player speed to 80x.']:
+            self.player.set_speed_80x()
+
+        elif key == conf.SHORT_KEYS['Set player speed to 90x.']:
+            self.player.set_speed_90x()
+
+        else:
+            warnings.warn(f"Key {key} is not recognized", stacklevel=2)
