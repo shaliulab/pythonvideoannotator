@@ -21,7 +21,7 @@ def get_usage_track_conf():
         modified = datetime.datetime.fromtimestamp(os.path.getmtime(filepath))
         now = datetime.datetime.now()
 
-        if (now - modified).total_seconds() > conf.USERSTATS_TIMEOUT_DAYS*60*24:
+        if (now - modified).total_seconds() > conf.USERSTATS_TIMEOUT_DAYS*60*60*24:
             return 'ask later'
 
         with open(filepath, "r") as infile:
