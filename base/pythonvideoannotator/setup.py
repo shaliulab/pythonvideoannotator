@@ -20,7 +20,7 @@ with open(os.path.join(PACKAGE_PATH, '..','..','README.md'), 'r') as fd:
 REQUIREMENTS = [
     "geometry_designer==0.4.38",
 	"modular-computer-vision-api-gui==0.3.31",
-	"pyforms-gui-shaliulab==4.905.154",
+	"pyforms-gui-shaliulab==4.905.155",
 	"modular-computer-vision-api==0.3.29",
 	"python-video-annotator-models-gui-shaliulab==0.9.0",
 	"python-video-annotator-models-shaliulab==0.9.0",
@@ -40,7 +40,7 @@ REQUIREMENTS = [
 	"python-video-annotator-module-import-export==0.5.23",
 	"python-video-annotator-module-background-finder==0.5.21",
 	"python-video-annotator-module-find-orientation==0.5.18",
-	"python-video-annotator-module-path-editor-shaliulab==0.5.29"
+	"python-video-annotator-module-path-editor-shaliulab==0.5.30"
 ]
 # REQUIREMENTS END
 
