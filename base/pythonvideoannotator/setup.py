@@ -40,7 +40,7 @@ REQUIREMENTS = [
 	"python-video-annotator-module-import-export==0.5.23",
 	"python-video-annotator-module-background-finder==0.5.21",
 	"python-video-annotator-module-find-orientation==0.5.18",
-	"python-video-annotator-module-path-editor-shaliulab==0.5.30"
+	"python-video-annotator-module-path-editor-shaliulab==0.5.31"
 ]
 # REQUIREMENTS END
 
