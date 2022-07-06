@@ -227,4 +227,4 @@ class BaseKeysEvents(BaseIO):
             self.player.set_speed_90x()
 
         else:
-            warnings.warn(f"Key {key} is not recognized", stacklevel=2)
+            logger.debug(f"Key {key} is not recognized")
