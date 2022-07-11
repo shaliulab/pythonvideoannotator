@@ -78,10 +78,11 @@ SHORT_KEYS = {
     'Select the first event.':                              'Alt+Q',
     'Select the last event.':                               'Alt+D',
     'Select the next event.':                               'Alt+D',
-    'Select the previous event.':                           'Alt+A',
+    'Select the previous event.':                           'Unmapped',
 
     # PLAYER
     'Play or pause the video.':                             'Ctrl+P',
+    'Pause the video.':                                      'Alt+P',
     'Jumps 1 frame backward.':                              'Ctrl+I',
     'Jumps 1 frame forward.':                               'Ctrl+O',
     'Jumps 20 seconds backward.':                           'Ctrl+K',

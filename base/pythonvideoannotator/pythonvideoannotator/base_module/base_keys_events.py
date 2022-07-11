@@ -135,6 +135,12 @@ class BaseKeysEvents(BaseIO):
             logger.debug('Play or pause the video')
             self.player.toggle_playing()
 
+
+        # PAUSE the video.
+        elif key == conf.SHORT_KEYS['Pause the video.']:
+            logger.debug('Pause the video')
+            self.player.stop()
+
         # Jumps 1 frame backwards.
         elif key == conf.SHORT_KEYS['Jumps 1 frame backward.']:
             logger.debug('Jumps 1 frame backward.')
