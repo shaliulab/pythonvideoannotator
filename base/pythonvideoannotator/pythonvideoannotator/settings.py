@@ -115,3 +115,10 @@ SHORT_KEYS = {
 
 from AnyQt.QtWidgets import QColorDialog, QFileDialog
 PYFORMS_COLORDIALOGS_OPTIONS = QColorDialog.ShowAlphaChannel
+
+READ_FORMAT="opencv"
+TRY_TO_LOAD_FROM_NO_GAPS=True
+FRAMES_ARE_ZERO_INDEXED=False
+EXTRA_FUNCTIONS=False
+RADIUS_TO_SELECT_BLOB = 25
+
