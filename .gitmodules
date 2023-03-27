@@ -1,9 +1,9 @@
 [submodule "base/pythonvideoannotator-models"]
 	path = base/pythonvideoannotator-models
-	url = https://github.com/video-annotator/pythonvideoannotator-models.git
+	url = https://github.com/shaliulab/pythonvideoannotator-models.git
 [submodule "base/pythonvideoannotator-models-gui"]
 	path = base/pythonvideoannotator-models-gui
-	url = https://github.com/video-annotator/pythonvideoannotator-models-gui.git
+	url = https://github.com/shaliulab/pythonvideoannotator-models-gui.git
 [submodule "plugins/pythonvideoannotator-module-backgroundfinder"]
 	path = plugins/pythonvideoannotator-module-backgroundfinder
 	url = https://github.com/video-annotator/pythonvideoannotator-module-backgroundfinder.git
@@ -15,7 +15,7 @@
 	url = https://github.com/video-annotator/mcv-gui.git
 [submodule "libraries/confapp"]
 	path = libraries/confapp
-	url = https://github.com/UmSenhorQualquer/confapp.git
+	url = https://github.com/shaliulab/confapp.git
 [submodule "plugins/pythonvideoannotator-module-contoursimages"]
 	path = plugins/pythonvideoannotator-module-contoursimages
 	url = https://github.com/video-annotator/pythonvideoannotator-module-contoursimages.git
@@ -39,7 +39,7 @@
 	url = https://github.com/video-annotator/pythonvideoannotator-module-motioncounter.git
 [submodule "plugins/pythonvideoannotator-module-patheditor"]
 	path = plugins/pythonvideoannotator-module-patheditor
-	url = https://github.com/video-annotator/pythonvideoannotator-module-patheditor.git
+	url = https://github.com/shaliulab/pythonvideoannotator-module-patheditor.git
 [submodule "plugins/pythonvideoannotator-module-regionsfilter"]
 	path = plugins/pythonvideoannotator-module-regionsfilter
 	url = https://github.com/video-annotator/pythonvideoannotator-module-regionsfilter.git
@@ -57,7 +57,7 @@
 	url = https://github.com/video-annotator/pythonvideoannotator-module-virtualobjectgenerator.git
 [submodule "libraries/pyforms-gui"]
 	path = libraries/pyforms-gui
-	url = https://github.com/UmSenhorQualquer/pyforms-gui.git
+	url = https://github.com/shaliulab/pyforms-gui.git
 [submodule "libraries/geometry-designer"]
 	path = libraries/geometry-designer
 	url = https://github.com/video-annotator/geometry-designer.git
@@ -69,5 +69,5 @@
 	url = https://github.com/video-annotator/pythonvideoannotator-module-deeplab.git
 [submodule "plugins/pythonvideoannotator-module-idtrackerai"]
 	path = plugins/pythonvideoannotator-module-idtrackerai
-	url = https://github.com/video-annotator/pythonvideoannotator-module-idtrackerai.git
+	url = https://github.com/shaliulab/pythonvideoannotator-module-idtrackerai.git
 
